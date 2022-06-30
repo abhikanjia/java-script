@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gcd</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var a;
+		var flag=false;
+		n1=parseInt(prompt(enter n1));
+		n2=parseInt(prompt(enter n2));
+
+
+		if(n1>n2){
+			a=n1/2;
+		}
+		else{
+			a=n2/2;
+		}
+
+		for(var i=1;i<=a;i++){
+			if(n1%i==0 && n2%i==0){
+				var flag=true;
+				break;
+			}
+		}
+		if(!flag){
+			document.write("no gcd found");
+		}
+		else{
+			document.write("gcd is "+i);
+		}
+	</script>
+
+</body>
+</html>

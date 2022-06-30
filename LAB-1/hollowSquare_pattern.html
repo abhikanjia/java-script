@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hollow square</title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+		n=parseInt(prompt("enter number of rows and columns"));
+
+		for(i=1;i<=n;i++){
+			for(j=1;j<=n;j++){
+			if(i==1 || i==n || j==1 ||j==n){
+				document.write("* ");
+			}
+			else{
+				document.write("&nbsp&nbsp&nbsp");
+			}
+		}
+		document.write("</br>");
+	}
+	</script>
+
+</body>
+</html>

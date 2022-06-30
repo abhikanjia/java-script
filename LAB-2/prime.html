@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>prime
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n=parseInt(prompt("enter any number"));
+		var flag=false;
+		for(var i=2;i<=n/2;i++){
+			if(n%i==0){
+				var flag=true;
+				break;
+			}
+		}
+
+		if(flag==true){
+			document.write("not prime");
+		}
+		else{
+			document.write("prime number");
+		}
+	</script>
+
+</body>
+</html>

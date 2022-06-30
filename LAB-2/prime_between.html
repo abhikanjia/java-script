@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>prime_between</title>
+</head>
+<body>
+	<script type="text/javascript">
+		n1=parseInt(prompt("enter first number"));
+		n2=parseInt(prompt("enter second number"));
+		
+
+		for(var i=n1;i<=n2;i++){
+			var flag=true;
+
+		
+
+	for(var j=2;j<=(i/2);j++){
+		if(i%j==0){
+			flag=false;
+			break;
+		}
+	}
+
+	if(flag){
+		document.write(i+"</br>");
+
+	}
+}
+	</script>
+
+</body>
+</html>
